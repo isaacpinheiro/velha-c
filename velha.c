@@ -10,11 +10,11 @@ Player player2;
 void initialSetup()
 {
 
-    strcpy(player1.name, "Player 1");
-    strcpy(player1.symbol, "X");
+    strncpy(player1.name, "Player 1", 256);
+    strncpy(player1.symbol, "X", 1);
 
-    strcpy(player2.name, "Player 2");
-    strcpy(player2.symbol, "O");
+    strncpy(player2.name, "Player 2", 256);
+    strncpy(player2.symbol, "O", 1);
 
     int i;
 
@@ -96,7 +96,7 @@ void changePlayerSymbol()
         scanf("%s", newSymbol);
 
         if (strcmp(newSymbol, player2.symbol) != 0)
-            strcpy(player1.symbol, newSymbol);
+            strncpy(player1.symbol, newSymbol, 1);
 
     } else if (p == 2) {
 
@@ -111,7 +111,7 @@ void changePlayerSymbol()
         scanf("%s", newSymbol);
 
         if (strcmp(newSymbol, player1.symbol) != 0)
-            strcpy(player2.symbol, newSymbol);
+            strncpy(player2.symbol, newSymbol, 1);
 
     }
 
