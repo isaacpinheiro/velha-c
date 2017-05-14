@@ -2,8 +2,8 @@
 #define __VELHA_H__
 
 struct _Player{
-	char name[256];
-	char symbol[1];
+    char name[256];
+    char symbol[1];
 };
 
 typedef struct _Player Player;

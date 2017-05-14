@@ -1,40 +1,40 @@
 #include <stdio.h>
 #include "velha.h"
 
-int main(){
+int main()
+{
 
-	initialSetup();
+    initialSetup();
+    int op = 0;
 
-	int op = 0;
+    while (op != 3) {
 
-	while(op != 3){
+        printf("\033[2J");
+        printf("#############################################################################\n");
+        printf("#                                  Velha                                    #\n");
+        printf("#                                                                           #\n");
+        printf("#                              1) Start                                     #\n");
+        printf("#                                                                           #\n");
+        printf("#                              2) Configure                                 #\n");
+        printf("#                                                                           #\n");
+        printf("#                              3) Exit                                      #\n");
+        printf("#                                                                           #\n");
+        printf("#############################################################################\n");
+        printf("\n\n///> ");
 
-		printf("\033[2J");
-		printf("#############################################################################\n");
-		printf("#                                  Velha                                    #\n");
-		printf("#                                                                           #\n");
-		printf("#                              1) Start                                     #\n");
-		printf("#                                                                           #\n");
-		printf("#                              2) Configure                                 #\n");
-		printf("#                                                                           #\n");
-		printf("#                              3) Exit                                      #\n");
-		printf("#                                                                           #\n");
-		printf("#############################################################################\n");
-		printf("\n\n///> ");
+        scanf("%d", &op);
 
-		scanf("%d", &op);
+        if (op == 1) {
+            start();
+        } else if (op == 2) {
+            configure();
+        }
 
-		if(op == 1){
-			start();
-		}else if(op == 2){
-			configure();
-		}
+    }
 
-	}
+    printf("\033[2J");
 
-	printf("\033[2J");
-
-	return 0;
+    return 0;
 
 }
 
