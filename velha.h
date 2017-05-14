@@ -1,12 +1,10 @@
-#ifndef __VELHA_H__
-#define __VELHA_H__
+#ifndef VELHA_H
+#define VELHA_H
 
-struct _Player{
+typedef struct Player {
     char name[256];
     char symbol[1];
-};
-
-typedef struct _Player Player;
+} Player;
 
 char scenario[9];
 
