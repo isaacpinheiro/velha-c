@@ -6,7 +6,6 @@
 ```sh
 $ git clone https://github.com/isaacpinheiro/velha-c.git
 $ cd velha-c/
-$ gcc -c *.c
-$ gcc *.o -o Velha
-$ ./Velha
+$ make build
+$ make run
 ```
